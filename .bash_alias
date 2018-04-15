@@ -1,0 +1,10 @@
+alias todo='sh ~/Desktop/programming/bash_scripts/todo.sh'
+alias github='sh ~/Desktop/programming/bash_scripts/github.sh'
+alias euler='cd ~/Desktop/programming/project_euler'
+alias chromem="ps -emv | grep -i chrome | awk '{print $12}' | awk '{for(i=1;i<=NF;i++)s+=$i}END'"
+alias ll="ls -l"
+alias programming='cd ~/Desktop/programming'
+alias resources='cd ~/Desktop/programming/resources'
+alias gitbucket='sh ~/Desktop/programming/bash_scripts/gitbucket.sh'
+alias notes='sh ~/Desktop/programming/bash_scripts/notes.sh'
+alias git-root='cd $(git rev-parse --show-toplevel)'
