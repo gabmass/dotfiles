@@ -10,6 +10,9 @@ export CLICOLOR=1
 export LSCOLORS=GxFxBxDxCxegedabagacad
 export PATH=$PATH:$HOME/.local/bin
 
+# Check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
 
 if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
   . $(brew --prefix)/share/bash-completion/bash_completion
