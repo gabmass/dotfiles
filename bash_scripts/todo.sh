@@ -5,15 +5,15 @@
 DATE=`date +%d%B%Y`
 YESTERDAY=`date -r $((`date +%s` - 86400)) '+%d%B%Y'`
 TOMORROW=`date -r $((`date +%s` + 86400)) '+%d%B%Y'`
+PATH=`~/Desktop/life/todo`
 
 if [[ $1 = "yesterday" ]]; then
-	vim ~/Desktop/life/todo/$YESTERDAY
+	vim $PATH/$YESTERDAY
 
 elif [[ $1 = "tomorrow" ]]; then
-	vim ~/Desktop/life/todo/$TOMORROW
-
+	vim $PATH/$TOMORROW
 else
 	# echo $DATE
-	vim ~/Desktop/life/todo/$DATE
+	vim $PATH/$DATE
 fi
 
